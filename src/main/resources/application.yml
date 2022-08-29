@@ -9,7 +9,8 @@ spring.jpa:
   properties:
     hibernate:
       format_sql: true
-      dialect: org.hibernate.dialect.H2Dialect
+# when using the oracle dialect the test would work      
+#      dialect: org.hibernate.dialect.Oracle10gDialect
   hibernate.ddl-auto: none
   
 logging.level:
