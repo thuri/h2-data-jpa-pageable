@@ -1,0 +1,16 @@
+spring.datasource:
+  url: jdbc:h2:mem:test-agbserver;DB_CLOSE_ON_EXIT=TRUE;DB_CLOSE_DELAY=-1;MODE=Oracle;
+  username: sa
+  password: 
+  driver-class-name: org.h2.Driver
+  
+spring.jpa:
+  show-sql: true
+  properties:
+    hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.H2Dialect
+  hibernate.ddl-auto: none
+  
+logging.level:
+  org.hibernate.type: trace
